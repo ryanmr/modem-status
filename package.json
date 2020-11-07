@@ -1,0 +1,15 @@
+{
+  "name": "playwright-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ryan Rampersad",
+  "license": "MIT",
+  "dependencies": {
+    "delay": "^4.4.0",
+    "dotenv": "^8.2.0",
+    "playwright": "^1.5.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
