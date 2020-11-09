@@ -53,6 +53,8 @@ async function getInfoFromModem() {
   const fecErrorsFar = await getText("Far_endFEC");
 
   const data = {
+    date: Date.now(),
+    dateStr: new Date().toISOString(),
     downspeed,
     upspeed,
     retrains,
@@ -75,7 +77,7 @@ async function getInfoFromModem() {
   console.table(data);
 
   // write json
-  fs.appendFileSync("./data.json", JSON.stringify(data) + "\n");
+  fs.appendFileSync("./data.log", JSON.stringify(data) + "\n");
 
   await browser.close();
 
